@@ -3,19 +3,43 @@
     padding:0;
     text-align: center;
 }
-
-h1{
+.header {
     background-color: black;
     color: white;
-    
+    display: flex;
     height: 5rem;
-    line-height: 5rem;
+    align-items: center; /* Center text vertically */
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 0 1rem; /* Add padding for spacing */
 }
+.header h1 {
+    margin: 30rem; /* Remove default margin for h1 */
+    text-align: center; /* Center text horizontally */
+    line-height: 5rem; /* Center text vertically */
+    font-size: 2.5rem;
+    
+}
+
+.btn {
+    margin-left: auto; /* Push button to the end */
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-color: white;
+    border-radius: 5px;
+    background-color: white; /* Blue color */
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
 
 #choice{
      display:flex;
      justify-content: center;
-     margin-top: 4rem;
+     /* margin-top: 4rem; */
      align-items: center;
     
 
@@ -29,19 +53,21 @@ h1{
 }
 
 .img{
-    height: 165px;
-    width: 165px;
+    height: 6.5rem;
+    width: 6.5rem;
     object-fit: cover;
     border-radius: 50%;
     display:flex;
      justify-content: center;
      align-items: center;
      margin-left: 2rem;
+     margin-top: 6rem;
 }
 img{
-    height: 150px;
-    width: 150px;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
+
 }
 
 .score-board{
@@ -70,4 +96,8 @@ img{
 
 
     
+}
+.main{
+    background-color:white;
+    height:100rem;
 }
